@@ -43,7 +43,7 @@ public class Game extends Application {
         Parent root = fxmlLoader.load();
         GameController controller = fxmlLoader.getController();
         Scene scene = new Scene(root);
-        stage.setFullScreen(false);
+        stage.setFullScreen(true);
         scene.setOnMousePressed(mouseEvent -> player.setUp(mouseEvent.isPrimaryButtonDown()));
         scene.setOnMouseReleased(mouseEvent -> player.setUp(false));
         stage.setScene(scene);
@@ -73,10 +73,10 @@ public class Game extends Application {
                 switch (counter) {
 
                     //creates an object at the top of the screen every 100 counter ticks, offset by 50 ticks
-                    case 50 -> controller.createTopObject();
+                    case 25 -> controller.createTopObject();
 
                     //creates an object at the bottom of screen, resets counter when it = 100
-                    case 100 -> {
+                    case 50 -> {
                         controller.createBottomObject();
                         counter = 0;
                     }

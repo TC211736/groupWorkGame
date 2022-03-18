@@ -22,7 +22,7 @@ public class GameController {
     public ArrayList<ImageView> backgrounds = new ArrayList<>();
     
     public double playerY;
-    public int gameSpeed = 5;
+    public int gameSpeed = 12;
 
 
     //put objects in correct positions at the start of the program
@@ -47,8 +47,8 @@ public class GameController {
     public Pair<Float, Float> updatePlayerPos(boolean up, float velY, float rotY) {
 
         if (playerY - 2 * velY >= 0 && playerY - 2 * velY < 1020) {
-            if (up && velY + 0.30 < 12) velY += 0.30;
-            if (!up && velY - 0.17 > -10) velY -= 0.17;
+            if (up && velY + 1.1 < 12) velY += 1.1;
+            if (!up && velY - 0.6 > -10) velY -= 0.6;
             rotY = 4 * -velY;
         }
         if (playerY - 2 * velY < 0) {
