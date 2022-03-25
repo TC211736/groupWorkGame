@@ -6,6 +6,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.util.Pair;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class GameController {
     @FXML
@@ -22,7 +23,9 @@ public class GameController {
     public ArrayList<ImageView> backgrounds = new ArrayList<>();
     
     public double playerY;
-    public int gameSpeed = 12;
+    public float gameSpeed = 15;
+    public int prevHeight = 0;
+    public Random random = new Random();
 
 
     //put objects in correct positions at the start of the program
@@ -79,7 +82,7 @@ public class GameController {
             if (!isOnScreen(imageView, scene)) {
                 imageView.setX(1919);
             } else {
-                imageView.setX(imageView.getX() - gameSpeed);
+                imageView.setX(imageView.getX() - gameSpeed/1.5);
             }
         }
     }
@@ -90,18 +93,20 @@ public class GameController {
         for (ImageView object : objects) {
             if (!isOnScreen(object, scene)) {
                 object.setX(1919);
-                object.setY(0);
+                object.setY(-700+prevHeight);
                 object.setRotate(0);
                 return;
             }
         }
     }
 
+
     public void createBottomObject() {
         for (ImageView object : objects) {
             if (!isOnScreen(object, scene)) {
+                prevHeight = (random.nextInt(300)-150);
                 object.setX(1919);
-                object.setY(scene.getPrefHeight() - object.getFitHeight());
+                object.setY(scene.getPrefHeight()-object.getFitHeight()+600+prevHeight);
                 object.setRotate(180);
                 return;
             }

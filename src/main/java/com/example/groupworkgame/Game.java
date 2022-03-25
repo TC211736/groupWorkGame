@@ -67,9 +67,7 @@ public class Game extends Application {
 
             //updates the counter variable
             public int updateCounter(int counter){
-                if (counter % 5 == 0) {
-                    score++;
-                }
+                score++;
                 switch (counter) {
 
                     //creates an object at the top of the screen every 100 counter ticks, offset by 50 ticks
