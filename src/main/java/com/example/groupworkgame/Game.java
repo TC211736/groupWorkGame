@@ -12,12 +12,12 @@ import java.io.IOException;
 
 public class Game extends Application {
 
-    Player player = new Player(false, 0, 0, false);
+    static Player player = new Player(false, 0, 0, false);
 
-    int counter;
-    int score;
+    static int counter;
+    static int score;
 
-    public void initialiseArrayLists(Parent root, GameController controller){
+    public static void initialiseArrayLists(Parent root, GameController controller){
 
         //initialise background arraylist
         for (int i = 0; i < root.getChildrenUnmodifiable().size(); i++) {
@@ -35,7 +35,6 @@ public class Game extends Application {
     }
 
 
-    @Override
     public void start(Stage stage) throws IOException {
 
         //initialise stage & objects

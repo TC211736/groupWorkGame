@@ -1,10 +1,17 @@
 package com.example.groupworkgame;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 import javafx.util.Pair;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -21,7 +28,7 @@ public class GameController {
     public ArrayList<ImageView> objects = new ArrayList<>();
     @FXML
     public ArrayList<ImageView> backgrounds = new ArrayList<>();
-    
+
     public double playerY;
     public float gameSpeed = 15;
     public int prevHeight = 0;
@@ -145,7 +152,19 @@ public class GameController {
                 one.getFitHeight() + one.getY() > 0;
     }
 
+    @FXML
+    public void backToMain(ActionEvent actionEvent)  throws IOException {
+        FXMLLoader loader = new FXMLLoader (getClass().getResource("LoadingScreen.fxml"));
+        Parent root = loader.load();
+        Scene s2 = new Scene(root);
+        Stage window = (Stage)(((Node)actionEvent.getSource()).getScene().getWindow());
+        window.setFullScreen(true);
+        window.setScene(s2);
+        window.show();
 
+    }
 }
+
+
 
 

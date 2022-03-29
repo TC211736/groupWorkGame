@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080" prefWidth="1920" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupworkgame.GameController">
+<AnchorPane fx:id="scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080" prefWidth="1920" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupworkgame.GameController">
    <children>
       <ImageView fx:id="background" fitHeight="1080" fitWidth="1920" pickOnBounds="true" preserveRatio="false">
          <image>
@@ -53,5 +54,6 @@
          <image>
             <Image url="@objectTexture.png" />
          </image></ImageView>
+      <Button fx:id="backToMain" layoutY="2.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="47.0" prefWidth="150.0" text="Back To Main Menu" />
    </children>
 </AnchorPane>
