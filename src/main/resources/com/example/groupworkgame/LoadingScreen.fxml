@@ -4,14 +4,14 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="scenePane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupworkgame.LoadingScreenController">
+<AnchorPane fx:id="scenePane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupworkgame.LoadingScreenController">
    <children>
       <ImageView fitHeight="1080.0" fitWidth="1927.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../image/NewProject.png" />
+            <Image url="@../../../image/New%20Project%20(1).png" />
          </image>
       </ImageView>
-      <Button fx:id="btn" layoutX="501.0" layoutY="569.0" mnemonicParsing="false" onAction="#goToGame" prefHeight="115.0" prefWidth="216.0" text="Go to game:" />
+      <Button fx:id="btn" layoutX="579.0" layoutY="569.0" mnemonicParsing="false" onAction="#goToGame" prefHeight="115.0" prefWidth="216.0" text="Go to game:" />
       <Button fx:id="exitButton" layoutX="1181.0" layoutY="569.0" mnemonicParsing="false" onAction="#exitGame" prefHeight="115.0" prefWidth="227.0" text="Exit" />
    </children>
 </AnchorPane>
