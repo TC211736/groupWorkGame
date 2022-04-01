@@ -8,11 +8,11 @@
    <children>
       <ImageView fx:id="background" fitHeight="1080" fitWidth="1920" pickOnBounds="true" preserveRatio="false">
          <image>
-            <Image url="@background.jpg" />
+            <Image url="@CaveTexture.jpg" />
          </image></ImageView>
       <ImageView fx:id="background2" fitHeight="1080" fitWidth="1920" pickOnBounds="true" preserveRatio="false">
          <image>
-            <Image url="@background.jpg" />
+            <Image url="@CaveTexture.jpg" />
          </image></ImageView>
       <ImageView id="playerSprite" fx:id="playerSprite" fitHeight="60" fitWidth="100" pickOnBounds="true" preserveRatio="false">
          <image>
@@ -20,39 +20,39 @@
          </image></ImageView>
       <ImageView fx:id="obj1" fitHeight="1000" fitWidth="150" pickOnBounds="true" preserveRatio="false">
          <image>
-            <Image url="@objectTexture.png" />
+            <Image url="@CrystalTexture2.PNG" />
          </image></ImageView>
       <ImageView fx:id="obj2" fitHeight="1000" fitWidth="150" pickOnBounds="true" preserveRatio="false">
          <image>
-            <Image url="@objectTexture.png" />
+            <Image url="@CrystalTexture2.PNG" />
          </image></ImageView>
       <ImageView fx:id="obj3" fitHeight="1000" fitWidth="150" pickOnBounds="true" preserveRatio="false">
          <image>
-            <Image url="@objectTexture.png" />
+            <Image url="@CrystalTexture2.PNG" />
          </image></ImageView>
       <ImageView fx:id="obj4" fitHeight="1000" fitWidth="150" pickOnBounds="true" preserveRatio="false">
          <image>
-            <Image url="@objectTexture.png" />
+            <Image url="@CrystalTexture2.PNG" />
          </image></ImageView>
       <ImageView fx:id="obj5" fitHeight="1000" fitWidth="150" pickOnBounds="true" preserveRatio="false">
          <image>
-            <Image url="@objectTexture.png" />
+            <Image url="@CrystalTexture2.PNG" />
          </image></ImageView>
       <ImageView fx:id="obj7" fitHeight="1000" fitWidth="150" pickOnBounds="true" preserveRatio="false">
          <image>
-            <Image url="@objectTexture.png" />
+            <Image url="@CrystalTexture2.PNG" />
          </image></ImageView>
       <ImageView fx:id="obj8" fitHeight="1000" fitWidth="150" pickOnBounds="true" preserveRatio="false">
          <image>
-            <Image url="@objectTexture.png" />
+            <Image url="@CrystalTexture2.PNG" />
          </image></ImageView>
       <ImageView fx:id="obj9" fitHeight="1000" fitWidth="150" pickOnBounds="true" preserveRatio="false">
          <image>
-            <Image url="@objectTexture.png" />
+            <Image url="@CrystalTexture2.PNG" />
          </image></ImageView>
       <ImageView fx:id="obj10" fitHeight="1000" fitWidth="150" pickOnBounds="true" preserveRatio="false">
          <image>
-            <Image url="@objectTexture.png" />
+            <Image url="@CrystalTexture2.PNG" />
          </image></ImageView>
       <Button fx:id="backToMain" layoutY="2.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="47.0" prefWidth="150.0" text="Back To Main Menu" />
    </children>
